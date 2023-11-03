@@ -7,6 +7,8 @@ import Footer from "../Components/Footer";
 import MapPresentation from "../Components/MapPresentation";
 import TransparencyComponent from "../Components/TransparencyComponent";
 import CultureComponent from "../Components/CultureComponent";
+import MissionComponent from "../Components/MissionComponent";
+import SolutionsComponent from "../Components/SolutionsComponent";
 
 // data
 import {
@@ -15,6 +17,8 @@ import {
   mapSectionData,
   transparencyData,
   cultureData,
+  missionData,
+  solutionsData,
 } from "../Data/About";
 import { footerData } from "../Data";
 
@@ -26,6 +30,14 @@ const About: React.FC<AboutProps> = (props) => {
   return (
     <div className="bg-black">
       <HeroComponent {...heroData} />
+
+      <MissionComponent
+        title={missionData.title}
+        desc1={missionData.desc1}
+        desc2={missionData.desc2}
+      />
+
+      <SolutionsComponent items={solutionsData} />
 
       <CultureComponent
         title={cultureData.title}

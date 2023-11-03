@@ -57,4 +57,44 @@ const cultureData = {
     "Our culture, CODE-(T), defines us. It protects and guides us to success. It keeps our team and management accountable to itself, its objective, and our long-term mission.",
 };
 
-export { heroData, ctaData, mapSectionData, transparencyData, cultureData };
+const missionData = {
+  title: "We Care!",
+  desc1:
+    "Elewa is a mission-driven organization. We make use of our cooperative and shared culture to drive the needle for the development of people and the environment. We care about our growth, but also care deeply about the context surrounding us.",
+  desc2:
+    "Our investments are therefore not limited to internal ones, but contribute heavily to our community and environment. From training the next scout leaders on sustainable practices, to bridging the employment gap for junior software developers.",
+};
+
+const solutionsData = [
+  {
+    imageUrl:
+      "https://res.cloudinary.com/dyl3rncv3/image/upload/v1680180166/elewa-group-website/Icons/PNG/Holistic_118_ylipr0.png",
+    title: "Holistic solutions",
+    description:
+      "We go beyond a simple patch-up but develop lasting solutions through holistic design.",
+  },
+  {
+    imageUrl:
+      "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/coorperative_kzlzrg.png",
+    title: "Impact",
+    description:
+      "Impact as a direct, or indirect, result. All our respective organizations have underlying theories of change.",
+  },
+  {
+    imageUrl:
+      "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690299/elewa-group-website/Icons/PNG/Opendata_fe7h3j.png",
+    title: "Open data",
+    description:
+      "Sharing is caring. We share what we learn. As proof, we've open-sourced all our internal projects.",
+  },
+];
+
+export {
+  heroData,
+  ctaData,
+  mapSectionData,
+  transparencyData,
+  cultureData,
+  missionData,
+  solutionsData,
+};
