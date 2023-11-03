@@ -89,6 +89,35 @@ const solutionsData = [
   },
 ];
 
+const valuesData = [
+  {
+    imageUrl:
+      "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/coorperative_kzlzrg.png",
+    title: "Cooperative",
+    description:
+      "One for all, all for one! We have a cooperative and open mindset. If one of us grows, all will follow.",
+  },
+  {
+    imageUrl:
+      "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/ownership_yno4a2.png",
+    title: "Ownership",
+    description:
+      "We are dependable and honor our commitments. When things don't go as planned, as they sometimes do, we communicate early to avoid catastrophe.",
+  },
+  {
+    imageUrl: "https://static.thenounproject.com/png/1721983-200.png",
+    title: "Detail",
+    description:
+      "We are a 'Centre of Excellence' as per global standards. We only compete with ourselves, but find in the global standard our only worthy rival.",
+  },
+  {
+    imageUrl: "https://static.thenounproject.com/png/1721983-200.png",
+    title: "Empathy",
+    description:
+      "We are nothing without people, and people have different contexts and needs. Our organization acts as a safe haven and shield for those in need.",
+  },
+];
+
 export {
   heroData,
   ctaData,
@@ -97,4 +126,5 @@ export {
   cultureData,
   missionData,
   solutionsData,
+  valuesData,
 };

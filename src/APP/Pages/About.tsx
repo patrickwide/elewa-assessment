@@ -9,6 +9,7 @@ import TransparencyComponent from "../Components/TransparencyComponent";
 import CultureComponent from "../Components/CultureComponent";
 import MissionComponent from "../Components/MissionComponent";
 import SolutionsComponent from "../Components/SolutionsComponent";
+import ValuesComponent from "../Components/ValuesComponent";
 
 // data
 import {
@@ -19,6 +20,7 @@ import {
   cultureData,
   missionData,
   solutionsData,
+  valuesData,
 } from "../Data/About";
 import { footerData } from "../Data";
 
@@ -43,6 +45,8 @@ const About: React.FC<AboutProps> = (props) => {
         title={cultureData.title}
         description={cultureData.description}
       />
+
+      <ValuesComponent items={valuesData} />
 
       <TransparencyComponent
         imageUrl={transparencyData.imageUrl}
