@@ -43,4 +43,18 @@ const mapSectionData = {
   },
 };
 
-export { heroData, ctaData, mapSectionData };
+const transparencyData = {
+  imageUrl:
+    "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690300/elewa-group-website/Icons/PNG/Transparancy_fqal8q.png",
+  title: "Transparency",
+  description:
+    "Transparency, an open mind, and an open heart hold our organization together. We commit to and promote full transparency to ourselves, our stakeholders, and our beneficiaries. We furthermore invest heavily in open-source and open-data projects, as true potential lies everywhere. Not just within.",
+};
+
+const cultureData = {
+  title: "Our Culture & Values",
+  description:
+    "Our culture, CODE-(T), defines us. It protects and guides us to success. It keeps our team and management accountable to itself, its objective, and our long-term mission.",
+};
+
+export { heroData, ctaData, mapSectionData, transparencyData, cultureData };
