@@ -6,9 +6,17 @@ import CTASection from "../Components/CTASections";
 import PresentationSlide from "../Components/PresentationSlide";
 import Footer from "../Components/Footer";
 import ElewaButton from "../Components/ElewaButton";
+import DiverseComponent from "../Components/DiverseComponent";
+import KeyFiguresComponent from "../Components/KeyFiguresComponent";
 
 // data
-import { heroData, ctaData, pageData } from "../Data/Invest";
+import {
+  heroData,
+  ctaData,
+  pageData,
+  diverseData,
+  keyFiguresData,
+} from "../Data/Invest";
 import { footerData } from "../Data";
 
 /**
@@ -23,6 +31,12 @@ const Invest: React.FC<InvestProps> = (props) => {
   return (
     <div className="bg-black">
       <HeroComponent {...heroData} />
+      <DiverseComponent
+        title={diverseData.title}
+        description={diverseData.description}
+        imageUrl={diverseData.imageUrl}
+      />
+      <KeyFiguresComponent data={keyFiguresData} />
       {pageData.map((data, index) => (
         <PresentationSlide
           key={index}

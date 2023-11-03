@@ -83,4 +83,49 @@ const ctaData = {
   linkUrl: "#", // Replace with the actual URL
 };
 
-export { heroData, ctaData, pageData };
+const diverseData = {
+  title: "How we see it differently",
+  description:
+    "The global South is rapidly catching up with the 'developed' world. It's time for you to get to know the rapid development, innovation and drive going on in this part of the world (East-Africa, South Asia and beyond).",
+  imageUrl:
+    "https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,w_1280/v1675690306/elewa-group-website/Images/Mask_Group_17_rjkgrq.png",
+};
+
+const keyFiguresData = [
+  {
+    value: "1.3M",
+    description:
+      "Approx. number of Kenyan talents reaching the age of 18 in 2022",
+  },
+  {
+    value: "5M",
+    description: "Number of East-Africans (EAC) reaching the age of 18 in 2022",
+  },
+  {
+    value: "2022",
+    description:
+      "Democratic Republic of Congo joins the East African Community",
+  },
+  {
+    value: "1.5M",
+    description: "The number of unfilled IT vacancies in the US and EU markets",
+  },
+  {
+    value: "10M",
+    description: "Number of technical vacancies by 2030",
+  },
+  {
+    value: "2050",
+    description: "Africa holds the world's largest workforce",
+  },
+  {
+    value: "$4.6M",
+    description: "Startup funding raised by African startups in 2022",
+  },
+  {
+    value: "310%",
+    description: "Increase in startup funding for companies with HQ in Kenya",
+  },
+];
+
+export { heroData, ctaData, pageData, diverseData, keyFiguresData };
