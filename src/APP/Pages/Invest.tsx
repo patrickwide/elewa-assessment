@@ -56,7 +56,14 @@ const Invest: React.FC<InvestProps> = (props) => {
       ))}
 
       <CTASection {...ctaData} />
-      <Footer navigation={[]} {...footerData} />
+      <Footer
+        address={footerData.address}
+        phone={footerData.phone}
+        email={footerData.email}
+        navigation={footerData.navigationLinks}
+        brands={footerData.brands}
+        privacy={footerData.privacy}
+      />
     </div>
   );
 };

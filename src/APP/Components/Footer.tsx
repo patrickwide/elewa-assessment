@@ -1,11 +1,16 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // Define an interface for the Footer component props
+interface FooterLink {
+  title: string;
+  to: string;
+}
+
 interface FooterProps {
   address: string;
   phone: string;
   email: string;
-  navigation: string[];
+  navigation: FooterLink[];
   brands: string[];
   privacy: string[];
 }
@@ -34,8 +39,8 @@ const Footer: React.FC<FooterProps> = ({
           <h2 className="my-4 underline">Navigation</h2>
           <ul>
             {navigation.map((item, index) => (
-              <li key={index} className="my-4">
-                {item}
+              <li className="my-4" key={index}>
+                <Link to={item.to}>{item.title}</Link>
               </li>
             ))}
           </ul>

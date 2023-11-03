@@ -61,7 +61,14 @@ const About: React.FC<AboutProps> = (props) => {
         customClasses={mapSectionData.customClasses}
       />
       <CTASection {...ctaData} />
-      <Footer navigation={[]} {...footerData} />
+      <Footer
+        address={footerData.address}
+        phone={footerData.phone}
+        email={footerData.email}
+        navigation={footerData.navigationLinks}
+        brands={footerData.brands}
+        privacy={footerData.privacy}
+      />
     </div>
   );
 };

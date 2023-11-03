@@ -47,7 +47,14 @@ const SocialImpact: React.FC<SocialImpactProps> = (props) => {
         title={"Some of our impact projects"}
       />
       <CTASection {...ctaData} />
-      <Footer navigation={[]} {...footerData} />
+      <Footer
+        address={footerData.address}
+        phone={footerData.phone}
+        email={footerData.email}
+        navigation={footerData.navigationLinks}
+        brands={footerData.brands}
+        privacy={footerData.privacy}
+      />
     </div>
   );
 };
