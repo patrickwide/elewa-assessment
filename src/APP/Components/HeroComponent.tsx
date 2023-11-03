@@ -48,20 +48,24 @@ const HeroComponent: React.FC<HeroComponentProps> = (props) => {
         <div className="text-white flex items-center">
           <div className="hidden md:flex">
             {props.navigationLinks.map((link, index) => (
-              <Link
-                key={index}
-                to={link.to}
-                className="text-xl text-white mx-8"
-              >
-                {link.name}
-              </Link>
+              <nav key={index}>
+                <Link to={link.to} className="text-xl text-white mx-8">
+                  {link.name}
+                </Link>
+              </nav>
             ))}
           </div>
-          <GiHamburgerMenu className="m-1 block md:hidden text-2xl" />
+          <GiHamburgerMenu
+            className="m-1 block md:hidden text-2xl"
+            onClick={() => console.log("Open menu")}
+          />
         </div>
       </div>
 
-      <div className="absolute inset-0 flex items-center sm:px-2 md:px-8">
+      <div
+        className="absolute inset-0 flex items-center sm:px-2 md:px-8 "
+        style={{ top: "110px" }}
+      >
         <div className="text-white text-center">
           {/* Text on the left */}
           <div className="text-left">

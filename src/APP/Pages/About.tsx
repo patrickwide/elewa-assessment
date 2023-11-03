@@ -4,8 +4,9 @@ import React from "react";
 import HeroComponent from "../Components/HeroComponent";
 import CTASection from "../Components/CTASections";
 import Footer from "../Components/Footer";
+import MapPresentation from "../Components/MapPresentation";
 
-import { heroData, ctaData } from "../Data/About";
+import { heroData, ctaData, mapSectionData } from "../Data/About";
 import { footerData } from "../Data";
 /**
  * A simple React component that renders a black placeholder.
@@ -15,6 +16,13 @@ const About: React.FC<AboutProps> = (props) => {
   return (
     <div className="bg-black">
       <HeroComponent {...heroData} />
+      <MapPresentation
+        title={mapSectionData.title}
+        content={mapSectionData.content}
+        mapSrc={mapSectionData.image}
+        customClasses={mapSectionData.customClasses}
+      />
+
       <CTASection {...ctaData} />
       <Footer navigation={[]} {...footerData} />
     </div>
