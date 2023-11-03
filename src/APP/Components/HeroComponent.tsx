@@ -1,12 +1,13 @@
 import React from "react";
 import DefaultLogo from "./../Assets/Logo/Logo_White_arvoyx.svg"; // Import the default logo
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 interface HeroComponentProps {
   backgroundImageUrl: string;
   logoUrl: string;
   logoLinkUrl: string;
-  navigationLinks: string[];
+  navigationLinks: { to: string; name: string }[];
   title: string;
   subtitle: string;
 }
@@ -47,9 +48,13 @@ const HeroComponent: React.FC<HeroComponentProps> = (props) => {
         <div className="text-white flex items-center">
           <div className="hidden md:flex">
             {props.navigationLinks.map((link, index) => (
-              <a key={index} href="#" className="text-xl text-white mx-8">
-                {link}
-              </a>
+              <Link
+                key={index}
+                to={link.to}
+                className="text-xl text-white mx-8"
+              >
+                {link.name}
+              </Link>
             ))}
           </div>
           <GiHamburgerMenu className="m-1 block md:hidden text-2xl" />

@@ -42,7 +42,7 @@ const Invest: React.FC<InvestProps> = (props) => {
       ))}
 
       <CTASection {...ctaData} />
-      <Footer {...footerData} />
+      <Footer navigation={[]} {...footerData} />
     </div>
   );
 };

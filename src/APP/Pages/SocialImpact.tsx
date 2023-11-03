@@ -5,11 +5,17 @@ import HeroComponent from "../Components/HeroComponent";
 import PresentationSlide from "../Components/PresentationSlide";
 import CTASection from "../Components/CTASections";
 import Footer from "../Components/Footer";
+import LogoCarousel from "../Components/LogoCarousel";
 
 // data
-import { pageData, heroData } from "../Data/socialImpact";
+import {
+  pageData,
+  heroData,
+  ctaData,
+  carouselData,
+} from "../Data/socialImpact";
 import { footerData } from "../Data";
-import { ctaData } from "../Data/socialImpact";
+
 /**
  * A simple React component that renders a black placeholder.
  * @param props The props for the component.
@@ -36,8 +42,12 @@ const SocialImpact: React.FC<SocialImpactProps> = (props) => {
           customClasses={data.customClasses}
         />
       ))}
+      <LogoCarousel
+        imageUrls={carouselData}
+        title={"Some of our impact projects"}
+      />
       <CTASection {...ctaData} />
-      <Footer {...footerData} />
+      <Footer navigation={[]} {...footerData} />
     </div>
   );
 };

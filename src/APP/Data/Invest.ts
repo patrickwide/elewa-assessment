@@ -16,7 +16,20 @@ const heroData = {
   logoUrl:
     "https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_White_arvoyx.svg",
   logoLinkUrl: "https://elewa.ke/",
-  navigationLinks: ["Link 1", "Link 2", "Link 3"],
+  navigationLinks: [
+    {
+      name: "Social impact",
+      to: "/",
+    },
+    {
+      name: "About",
+      to: "/about",
+    },
+    {
+      name: "Invest",
+      to: "/invest",
+    },
+  ],
   title: "Scaling impact. Beyond the norm",
   subtitle: "Human and Environmental Impact through Social Enterprise",
 };

@@ -16,7 +16,7 @@ const About: React.FC<AboutProps> = (props) => {
     <div className="bg-black">
       <HeroComponent {...heroData} />
       <CTASection {...ctaData} />
-      <Footer {...footerData} />
+      <Footer navigation={[]} {...footerData} />
     </div>
   );
 };
